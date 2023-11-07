@@ -4,10 +4,9 @@ function to calculate sets of inertia tensors
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 import numpy as np
-from rotations.rotate_vector_collection import rotate_vector_collection
-from rotations.rotations2d import rotation_matrices_from_basis as rotation_matrices_from_basis_2d
-from rotations.rotations3d import rotation_matrices_from_basis as rotation_matrices_from_basis_3d
-from rotations.vector_utilities import angles_between_list_of_vectors
+from halotools.utils.rotations2d import rotation_matrices_from_basis as rotation_matrices_from_basis_2d
+from halotools.utils.rotations3d import rotation_matrices_from_basis as rotation_matrices_from_basis_3d
+from halotools.utils.vector_utilities import angles_between_list_of_vectors, rotate_vector_collection
 
 
 __all__ = ('inertia_tensors',
